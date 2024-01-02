@@ -99,3 +99,24 @@ display: block;
 width: 391px;
 margin: auto;
 }
+
+
+@media screen and (max-width: 600px) {
+   
+    .navbar{
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 8px;
+        /* background-color: gray */
+        border-radius: 4px;
+        }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
