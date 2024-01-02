@@ -101,3 +101,30 @@ margin: auto;
 }
 
 
+@media screen and (max-width: 600px) {
+   html{
+    font-size: 55%;
+   }
+   .navbar li{
+    display: inline-block;
+    font-size: 30px;
+    
+    }
+    .btn{
+       
+        font-size: 30px;
+    }
+    .container {
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+    html{
+     font-size: 55%;
+    }
+    
+ }
