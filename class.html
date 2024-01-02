@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .mid{
+        border: 2px solid rgb(104, 224, 25);
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        color: black;
+
+    } */
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .navContainer {
+
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 60px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+        }
+
+        .right {
+            display: inline-block;
+
+            /* border: 2px solid rgb(102, 29, 191); */
+            position: fixed;
+            right: 34px;
+            top: 10px;
+            /* padding: 10px; */
+            /* width: 200px; */
+
+            color: black;
+
+        }
+
+        /* FOR NAVBAR */
+        .navbar {
+            display: inline-block;
+            background-color: white;
+            position: fixed;
+            border-radius: 4px;
+            position: fixed;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            background-color: black;
+            color: white;
+            padding: 8px 13px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: brown;
+        }
+
+        .container-fluid {
+            /* max-width: 80% ; */
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Heading {
+            color: #fd3c3d;
+            font-size: 50px;
+            margin-left: 30%;
+            margin-bottom: 20px;
+            margin-top: 80px;
+
+        }
+
+        .text-center {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .brd {
+            display: flex;
+
+        }
+
+        .img1 {
+            max-width: 80%;
+            align-self: center;
+            justify-content: center;
+
+        }
+
+        .text-justify {
+            padding: 30px;
+            justify-self: center;
+        }
+
+        .footer {
+            background: #000;
+            padding: 30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer .row {
+            width: 100%;
+            margin: 1% 0%;
+            padding: 0.6% 0%;
+            color: gray;
+            font-size: 0.8em;
+        }
+
+        .footer .row a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .footer .row a:hover {
+            color: #fff;
+        }
+
+        .footer .row ul {
+            width: 100%;
+        }
+
+        .footer .row ul li {
+            display: inline-block;
+            margin: 0px 30px;
+        }
+
+        .footer .row a i {
+            font-size: 2em;
+            margin: 0% 1%;
+        }
+
+        @media (max-width:720px) {
+            .footer {
+                text-align: left;
+                padding: 5%;
+            }
+
+            .footer .row ul li {
+                display: block;
+                margin: 10px 0px;
+                text-align: left;
+            }
+
+            .footer .row a i {
+                margin: 0% 3%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navContainer">
+        <ul class="navbar">
+            <li><a href="index.html" class="href">Home</a></li>
+            <li><a href="About.html" class="href">About Us</a></li>
+            <li><a href="class.html" class="href">Classes</a></li>
+            <li><a href="MembershipPage.html" class="href">Membership</a></li>
+            <li><a href="faq.html" class="href">FAQ</a></li>
+        </ul>
+
+
+        <!-- right box for search ya any button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- <p class="text-center font-italic" style="font-size:20px;">Take care of your body. It's the only place you have to live.</p> -->
+        <h2 class="Heading">Classes of the Gym</h2>
+
+
+        <div class="col">
+
+            <h5 class="text-center">GYM FITNESS</h5>
+            <div class="brd ">
+                <img src="img/classes1.jpg" alt="" class="img1">
+                <p class="text-justify p-2">Exercise and rest are the cornerstones of improving your quality of life.
+                    It's not always easy but it's always worth it. When you find a fitness routine you enjoy, you'll
+                    feel better, look better and be happier in your own skin.</p>
+            </div>
+        </div>
+        <div class="col">
+
+            <h5 class="text-center">INDOOR CYCLING</h5>
+            <div class="brd">
+                <p class="text-justify p-2">Cycling is a great form of exercise as well as a practical way to get
+                    around, but it also carries the risk of significant injury, especially head injury. involves using a
+                    special stationary exercise bicycle with a weighted flywheel in a classroom setting.</p>
+                <img src="img/classes2.jpg" alt="">
+
+            </div>
+        </div>
+
+
+        <div class="col">
+
+            <h5 class="text-center">POWER YOGA</h5>
+            <div class="brd">
+                <img src="img/classes3.jpg" alt="">
+                <p class="text-justify p-2">one up, slim down, and find balance with this high-energy summer workout
+                    from power yoga. It brings inner peace, a spiritual boost, and an unparalleled measure of
+                    serenity.Power yoga is a general term used to describe a vigorous.</p>
+            </div>
+        </div>
+        <div class="col">
+
+            <h5 class="text-center">CARDIO FITNESS</h5>
+            <div class="brd">
+                <p class="text-justify p-2">Cardio fitness is important to everyone. Quality cardio workouts can help
+                    everybody reach their health and fitness goals, whether those goals include new personal records for
+                    competition, lowering blood pressure, reducing cholesterol levels, managing diabetes.</p>
+                <img src="img/classes4.jpg" alt="">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                GOLD FITNESS Copyright © 2023 - All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

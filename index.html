@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>GOLD FITNESS</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- lest box for logo -->
+        <div class="left">
+            <img src="img/LOGO.webp" alt="">
+            <div>GOLD FITNESS</div>
+        </div>
+
+        <!-- mid box for navigation -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="href">Home</a></li>
+                <li><a href="About.html" class="href">About Us</a></li>
+                <li><a href="class.html" class="href">Classes</a></li>
+                <li><a href="MembershipPage.html" class="href">Membership</a></li>
+                <li><a href="faq.html" class="href">FAQ</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for search ya any button -->
+        <div class="right">
+            <a href="tel:+15551234567" class="call-us-button"> <button class="btn">Call Us Now</button></a>
+            <a href="mailto:membership@gymflex.com" class="email-us-button"><button class="btn">Email Us</button></a>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Join The Best Gym Of Bagru Now</h2>
+        <form action='temp.php' method='post' enctype='multipart/form-data' onsubmit="return validateForm()">
+            <div class="form_group">
+                <input type="text" name="name" placeholder="Enter The Name">
+            </div>
+            <div class="form_group">
+                <input type="tel" name="phone" placeholder="Enter The Contact" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+            </div>
+            <div class="form_group">
+                <input type="email" name="email" placeholder="Enter The Email">
+            </div>
+
+            <button type="submit" value="submit" name="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.forms[0]["name"].value;
+            var phone = document.forms[0]["phone"].value;
+            var email = document.forms[0]["email"].value;
+
+            if (name === "" || phone === "" || email === "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+
+            // Phone number validation
+            var phoneRegex = /^[0-9]{10}$/;
+            if (!phoneRegex.test(phone)) {
+                alert("Please enter a valid 10-digit phone number");
+                return false;
+            }
+
+            // Email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>

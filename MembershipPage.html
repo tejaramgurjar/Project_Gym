@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */   
+
+}
+body.background{
+    background: url(img/bgPhoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#membership-plans {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-plan {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.membership-plan h3 {
+    color: #333;
+}
+.membership-btn{
+    width:160px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    height: 60px;
+    margin-left: 40%;
+    box-shadow: 2px 6px 5px rgba(0,0,0,0.2);
+}
+.btn{
+    left: 50%;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+#member-benefits {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#member-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#member-benefits li {
+    padding: 5px 0;
+}
+
+#how-to-join, #faq, #contact {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#how-to-join ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+#how-to-join li {
+    padding: 5px 0;
+}
+
+#faq dl {
+    display: grid;
+    gap: 10px;
+}
+
+#faq dt {
+    color: #333;
+    font-weight: bold;
+}
+
+#faq dd {
+    margin-left: 0;
+}
+
+#contact ul {
+    padding: 0;
+    list-style: none;
+}
+
+#contact a {
+    color: #3498db;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+
+<body class="background">
+    <header>
+        <h1>Gold Gym Membership</h1>
+    </header>
+
+    <section id="membership-plans">
+        <h2>Choose Your Membership Plan</h2>
+
+        <div class="membership-plan">
+            <h3>Basic Membership</h3>
+            <p>Access to gym facilities during regular hours.</p>
+            <p>No commitment, cancel anytime.</p>
+            <p class="price">Rs.5000 per month</p>
+        </div>
+
+        <div class="membership-plan">
+            <h3>Premium Membership</h3>
+            <p>24/7 access to gym facilities.</p>
+            <p>Access to exclusive classes and events.</p>
+            <p>Personalized workout plans.</p>
+            <p class="price">Rs.10000 per month</p>
+        </div>
+
+        <div class="membership-plan">
+            <h3>Family Membership</h3>
+            <p>Includes access for two adults and up to two children.</p>
+            <p>Family-friendly classes and events.</p>
+            <p class="price">Rs.20000 per month</p>
+        </div>
+        <div class="btn">
+            <a href="membership.html"><button class="membership-btn">Get Your Membership Click here</button></a>
+        </div>
+    </section>
+
+    <section id="member-benefits">
+        <h2>Member Benefits</h2>
+        <ul>
+            <li>State-of-the-art gym equipment.</li>
+            <li>Certified and experienced trainers.</li>
+            <li>Clean and spacious workout areas.</li>
+            <li>Locker room facilities.</li>
+            <li>Exclusive discounts on fitness merchandise.</li>
+            <li>Priority registration for classes and workshops.</li>
+            <li>Monthly fitness assessments.</li>
+        </ul>
+    </section>
+
+    <section id="how-to-join">
+        <h2>How to Join</h2>
+        <ol>
+            <li>Select Your Membership: Choose the membership plan that fits your needs.</li>
+            <li>Fill Out the Form: Provide your basic information to get started.</li>
+            <li>Payment: Enter your payment details securely.</li>
+            <li>Welcome Kit: Receive a welcome kit with your membership details.</li>
+        </ol>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <dl>
+            <dt>Q: Can I upgrade or downgrade my membership?</dt>
+            <dd>A: Yes, you can upgrade or downgrade your membership at any time. Contact our support team for assistance.</dd>
+
+            <dt>Q: Is there a cancellation fee?</dt>
+            <dd>A: There are no cancellation fees for our Basic and Premium memberships. Please refer to our terms and conditions for more information.</dd>
+
+            <dt>Q: Can I freeze my membership?</dt>
+            <dd>A: Yes, you can freeze your membership for a specified period. Contact our support team for assistance.</dd>
+        </dl>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to our friendly team:</p>
+        <ul>
+            <li>Email: <a href="mailto:membership@goldgym.com">membership@goldgym.com</a></li>
+            <li>Phone: (555) 123-4567</li>
+            <li>Visit our <a href="contact.html">Contact Page</a> for in-person inquiries.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Join our Fitness Community Today! Welcome to the GoldGym family!</p>
+    </footer>
+</body>
+
+</html>
