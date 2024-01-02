@@ -1,119 +1,116 @@
-body {
-    background: url(img/gym.jpg);
-}
 
-.left {
+body{
+    background: url(img/gym.jpg);
+    
+}
+.left{
     display: inline-block;
+    /* border: 2px solid red; */
     color: white;
     position: absolute;
-    left: 3.4rem;
+    left:3.4rem;
     top: 2rem;
-}
 
-.left img {
+}
+.left img{
     width: 12.5rem;
 }
-
-.mid {
+.mid{
+    /* border: 2px solid rgb(104, 224, 25); */
     display: block;
-    width: 100%; /* Full width on smaller screens */
+    width: 50%;
     margin: 2rem auto;
     color: white;
-}
 
-.right {
+}
+.right{
     display: inline-block;
+    /* border: 2px solid rgb(102, 29, 191); */
     position: absolute;
     right: 3.4rem;
     top: 2rem;
     padding: 1rem;
+    /* width: 200px; */
+
     color: white;
+
+}
+/* FOR NAVBAR */
+.navbar{
+display: inline-block;
+
+/* background-color: gray */
+border-radius: .4rem;
+}
+.navbar li{
+display: inline-block;
+font-size: 2rem;
+
 }
 
-.navbar {
-    display: inline-block;
-    border-radius: 0.4rem;
+.navbar li a{
+color: white;
+text-decoration: none;
+padding: 3.4rem 2.3rem;
 }
-
-.navbar li {
-    display: inline-block;
-    font-size: 2rem;
+.navbar li a:hover,.navbar li a:active{
+text-decoration: underline;
+color: gray;
 }
-
-.navbar li a {
-    color: white;
-    text-decoration: none;
-    padding: 3.4rem 2.3rem;
+.btn{
+font-family: 'Baloo Bhai', cursive;
+margin: 0rem;
+background-color: black;
+color: white;
+padding: .8rem 1.3rem;
+border: 0.2rem solid gray;
+border-radius: 1rem;
+font-size: 1rem;
+cursor: pointer;
 }
-
-.navbar li a:hover,
-.navbar li a:active {
-    text-decoration: underline;
-    color: gray;
+.btn:hover{
+background-color: brown;
 }
+.container{
+color: white;
+border: 0.2rem solid rgb(247, 244, 244);
+margin: 15.9rem 68.7rem;
+padding: 7.5rem;
+width: 33%;
+border-radius: 1rem;
 
-.btn {
-    font-family: 'Baloo Bhai', cursive;
-    margin: 0rem;
-    background-color: black;
-    color: white;
-    padding: 0.8rem 1.3rem;
-    border: 0.2rem solid gray;
-    border-radius: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
 }
+.form_group input{
+font-family: 'Baloo Bhai ',cursive;
+text-align: center;
+display: block;
+width: 37.5rem;
+padding: 0.6rem;
+border: 0.2rem solid black;
+margin: 1.1rem auto;
+border-radius: 0.8rem;
 
-.btn:hover {
-    background-color: brown;
 }
-
-.container {
-    color: white;
-    border: 0.2rem solid rgb(247, 244, 244);
-    margin: 5rem auto; /* Adjusted margin for better centering */
-    padding: 2rem;
-    width: 90%; /* Adjusted width for better responsiveness */
-    border-radius: 1rem;
+.container h2{
+ text-align: center;
 }
-
-.form_group input {
-    font-family: 'Baloo Bhai ', cursive;
-    text-align: center;
-    display: block;
-    width: 100%; /* Full width on smaller screens */
-    padding: 0.6rem;
-    border: 0.2rem solid black;
-    margin: 1.1rem auto;
-    border-radius: 0.8rem;
+.container button{
+display: block;
+width: 39.1rem;
+margin: auto;
 }
-
-.container h2 {
-    text-align: center;
-}
-
-.container button {
-    display: block;
-    width: 100%; /* Full width on smaller screens */
-    margin: 1rem auto; /* Adjusted margin for better centering */
-}
-
-html {
+html{
     font-size: 62.5%;
 }
 
-@media (max-width: 998px) {
-    html {
-        font-size: 55%;
-    }
-}
 
-@media (max-width: 768px) {
-    html {
-        font-size: 45%;
-    }
-
-    .navbar li {
-        font-size: 1.6rem; /* Adjusted font size for smaller screens */
-    }
+@media(max-width:998px) {
+   html{
+    font-size: 55%;
+   }
 }
+@media(max-width:768px) {
+    html{
+     font-size: 45%;
+    }
+ }
