@@ -110,6 +110,11 @@ margin: auto;
         /* background-color: gray */
         border-radius: 4px;
         }
+     .navbar li {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
 
     .btn {
         font-size: 12px;
