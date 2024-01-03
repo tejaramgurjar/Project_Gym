@@ -1,116 +1,132 @@
-
-body{
+body {
     background: url(img/gym.jpg);
-    
 }
-.left{
+
+.left {
     display: inline-block;
-    /* border: 2px solid red; */
     color: white;
     position: absolute;
-    left:3.4rem;
+    left: 3.4rem;
     top: 2rem;
-
 }
-.left img{
+
+.left img {
     width: 12.5rem;
 }
-.mid{
-    /* border: 2px solid rgb(104, 224, 25); */
+
+.mid {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 2rem auto;
     color: white;
-
 }
-.right{
+
+.right {
     display: inline-block;
-    /* border: 2px solid rgb(102, 29, 191); */
     position: absolute;
     right: 3.4rem;
     top: 2rem;
     padding: 1rem;
-    /* width: 200px; */
-
     color: white;
-
-}
-/* FOR NAVBAR */
-.navbar{
-display: inline-block;
-
-/* background-color: gray */
-border-radius: .4rem;
-}
-.navbar li{
-display: inline-block;
-font-size: 2rem;
-
 }
 
-.navbar li a{
-color: white;
-text-decoration: none;
-padding: 3.4rem 2.3rem;
+.navbar {
+    display: inline-block;
+    border-radius: 0.4rem;
 }
-.navbar li a:hover,.navbar li a:active{
-text-decoration: underline;
-color: gray;
-}
-.btn{
-font-family: 'Baloo Bhai', cursive;
-margin: 0rem;
-background-color: black;
-color: white;
-padding: .8rem 1.3rem;
-border: 0.2rem solid gray;
-border-radius: 1rem;
-font-size: 1rem;
-cursor: pointer;
-}
-.btn:hover{
-background-color: brown;
-}
-.container{
-color: white;
-border: 0.2rem solid rgb(247, 244, 244);
-margin: 15.9rem 68.7rem;
-padding: 7.5rem;
-width: 33%;
-border-radius: 1rem;
 
+.navbar li {
+    display: inline-block;
+    font-size: 2rem;
 }
-.form_group input{
-font-family: 'Baloo Bhai ',cursive;
-text-align: center;
-display: block;
-width: 37.5rem;
-padding: 0.6rem;
-border: 0.2rem solid black;
-margin: 1.1rem auto;
-border-radius: 0.8rem;
 
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 3.4rem 2.3rem;
 }
-.container h2{
- text-align: center;
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: gray;
 }
-.container button{
-display: block;
-width: 39.1rem;
-margin: auto;
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0rem;
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.3rem;
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
-html{
+
+.btn:hover {
+    background-color: brown;
+}
+
+.container {
+    color: white;
+    border: 0.2rem solid rgb(247, 244, 244);
+    margin: 15.9rem auto;
+    padding: 7.5rem;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.form_group input {
+    font-family: 'Baloo Bhai ', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    border: 0.2rem solid black;
+    margin: 1.1rem auto;
+    border-radius: 0.8rem;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+html {
     font-size: 62.5%;
 }
 
-
-@media(max-width:998px) {
-   html{
-    font-size: 55%;
-   }
-}
-@media(max-width:768px) {
-    html{
-     font-size: 45%;
+@media (max-width: 998px) {
+    html {
+        font-size: 55%;
     }
- }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .navbar li {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        margin: 5rem auto;
+        padding: 2rem;
+    }
+
+    .form_group input {
+        width: 100%;
+    }
+
+    .container button {
+        width: 100%;
+    }
+}
