@@ -187,23 +187,30 @@ html {
         font-size: 45%;
     }
 
-   
     .container {
         width: 90%;
         margin: 3rem auto;
         padding: 1rem;
     }
-    .navbar {
-            padding: 1.5rem; 
-        }
 
-        .navbar li a {
-            padding: 1rem; 
-        }
-        .btn{
-            padding: 1rem ;
-        }
+    .navbar {
+        position: relative; /* Adjusted position for responsiveness */
+        width: 100%; /* Full width for mobile */
+        padding: 1.5rem; 
+    }
+
+    .navbar li {
+        display: block; /* Display list items vertically for mobile */
+        font-size: 2rem;
+        margin-bottom: 1rem; /* Added margin between items for better spacing on smaller screens */
+    }
+
+    .navbar li a {
+        padding: 1rem; /* Adjusted padding for better spacing on smaller screens */
+        display: block; /* Ensure each link takes full width */
+    }
 }
+
 
     </style>
 
