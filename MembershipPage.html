@@ -7,137 +7,144 @@
     <title>Gym Membership</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    /* background-color: #f4f4f4; */   
+    
+    body.background{
+        background: url(img/bgPhoto.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem ;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    #membership-plans {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    .membership-plan {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border: 0.1rem solid #ddd;
+        border-radius: 0.6rem;
+    }
+    
+    .membership-plan h3 {
+        color: #333;
+    }
+    .membership-btn{
+        width:20rem;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        height: 6rem;
+        margin-left: 40%;
+        box-shadow: 0.2rem 0.6rem 0.5rem rgba(0,0,0,0.2);
+    }
+    .btn{
+        left: 100%;
+    }
+    
+    .price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #27ae60;
+    }
+    
+    #member-benefits {
+        background-color: #fff;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    #member-benefits ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #member-benefits li {
+        padding: 0.5rem 0;
+    }
+    
+    #how-to-join, #faq, #contact {
+        background-color: #fff;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    #how-to-join ol {
+        list-style-type: none;
+        padding: 0rem;
+    }
+    
+    #how-to-join li {
+        padding: 0.5rem 0;
+    }
+    
+    #faq dl {
+        display: grid;
+        gap: 1rem;
+    }
+    
+    #faq dt {
+        color: #333;
+        font-weight: bold;
+    }
+    
+    #faq dd {
+        margin-left: 0;
+    }
+    
+    #contact ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    #contact a {
+        color: #3498db;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }</style>
+    <style>
+           /* .mid{
+        border: 2px solid rgb(104, 224, 25);
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        color: black;
 
-}
-body.background{
-    background: url(img/bgPhoto.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem ;
+    } */
+
+    body{
+    margin:0rem ;
+    padding:0rem ;
+    box-sizing:border-box;
 }
 
-header h1 {
-    margin: 0;
-}
-
-#membership-plans {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
-
-.membership-plan {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border: 0.1rem solid #ddd;
-    border-radius: 0.6rem;
-}
-
-.membership-plan h3 {
-    color: #333;
-}
-.membership-btn{
-    width:16rem;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    height: 6rem;
-    margin-left: 40%;
-    box-shadow: 0.2rem 0.6rem 0.5rem rgba(0,0,0,0.2);
-}
-.btn{
-    left: 50%;
-}
-
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #27ae60;
-}
-
-#member-benefits {
-    background-color: #fff;
-    padding: 2rem;
-    margin-top: 2rem;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
-
-#member-benefits ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#member-benefits li {
-    padding: 0.5rem 0;
-}
-
-#how-to-join, #faq, #contact {
-    background-color: #fff;
-    padding: 2rem;
-    margin-top: 2rem;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
-
-#how-to-join ol {
-    list-style-type: none;
-    padding: 0rem;
-}
-
-#how-to-join li {
-    padding: 0.5rem 0;
-}
-
-#faq dl {
-    display: grid;
-    gap: 1rem;
-}
-
-#faq dt {
-    color: #333;
-    font-weight: bold;
-}
-
-#faq dd {
-    margin-left: 0;
-}
-
-#contact ul {
-    padding: 0;
-    list-style: none;
-}
-
-#contact a {
-    color: #3498db;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-    </style>
-    <style>/* FOR NAVBAR */
-       .right{
+    .right{
         display: inline-block;
         
         /* border: 2px solid rgb(102, 29, 191); */
@@ -150,87 +157,175 @@ footer {
         color: black;
 
     }
-        .navContainer{
-            background-color: white;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            height: 6rem;
-            box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2);
-        }
+    /* FOR NAVBAR */
+    .navContainer{
         
-        .navbar{
-            display: inline-block;
-            border-radius: 0.4rem;
-            position: fixed;
-            min-width: 20%;
-            padding: 2.5rem;
-            margin: 0;
-            top: 0;
-        }
-        
-        .navbar li{
-            display: inline-block;
-            font-size: 2rem;
-        }
-        
-        .navbar li a{
-            color: black;
-            text-decoration: none;
-            padding: 3.4rem 2.3rem;
-        }
-        
-        .navbar li a:hover, .navbar li a:active{
-            text-decoration: underline;
-            color: gray;
-        }
-        
-        .btn{
-            font-family: 'Baloo Bhai', cursive;
-            margin: 0rem;
-            background-color: black;
-            color: white;
-            padding: 0.8rem 1.3rem;
-            border: 0.2rem solid gray;
-            border-radius: 1rem;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        
-        .btn:hover{
-            background-color: brown;
-        }
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        top:0;
+        height:6rem;
+        box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2)
+    }
+    .navbar{
+        display: inline-block;
+        border-radius: 0.4rem;
+        position: fixed;
+        min-width: 20%;
+        padding: 2.5rem;
+        margin: 0;
+        top: 0;
+    
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 2rem;
 
-        </style>
-        <style>html {
-            font-size: 62.5%;
+    }
+
+    .navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 3.4rem 2.3rem;
+    }
+    .navbar li a:hover,.navbar li a:active{
+    text-decoration: underline;
+    color: gray;
+    }
+    .btn{
+    
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0rem;
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.3rem;
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    }
+    .btn:hover{
+    background-color: brown;
+    }
+
+        .container-fluid{
+            max-width: 80% ;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
         }
-        
-        @media (max-width: 1200px) {
-            html {
-                font-size: 65%;
-            }
+        .heading{
+            color:#fd3c3d;
+            font-size: 5rem;
+            margin-left: 30%;
+            margin-bottom: 2rem;
+            margin-top: 5rem;
+            
+            
         }
-        
-        @media (max-width: 768px) {
-            html {
-                font-size: 35%;
-            }
-        
-            /* Adjustments for smaller screens */
-            .container {
-                width: 90%;
-                margin: 3rem auto;
-                padding: 1rem;
-            }
-            .navbar {
+        .subheading{
+            font-size: 2.5rem;
+            font-style:italic;
+            text-align: center;
+        }
+       .text-center{
+            font-size: 2.5rem;
+            text-align: center;
+       }
+       p{
+            font-size: 2rem;
+       }
+       .brd{
+        display: flex;
+       
+       }
+       .img1{
+            max-width: 80%;
+            align-self: center;
+            justify-content: center;
+
+       }
+       .text-justify{
+            padding: 3rem;
+                justify-self: center ;
+       }
+    
+        body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+background:#000;
+padding:2rem 0rem;
+font-family: 'Play', sans-serif;
+text-align:center;
+width: 100%;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8rem;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0rem 3rem;
+}
+
+.footer .row a i{
+font-size:3rem;
+margin:0% 1%;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+
+   
+    .container {
+        width: 90%;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+    .navbar {
             padding: 2rem; 
         }
 
         .navbar li a {
             padding: 0.3rem; 
         }
-        }
+       
+}
         </style>
 </head>
 
@@ -335,11 +430,13 @@ footer {
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Have questions? Reach out to our friendly team:</p>
+        <p>
         <ul>
             <li>Email: <a href="mailto:membership@goldgym.com">membership@goldgym.com</a></li>
             <li>Phone: (555) 123-4567</li>
             <li>Visit our <a href="contact.html">Contact Page</a> for in-person inquiries.</li>
         </ul>
+        </p>
     </section>
 
     <footer>
