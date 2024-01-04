@@ -25,7 +25,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 2rem ;
 }
 
 header h1 {
@@ -34,46 +34,46 @@ header h1 {
 
 #membership-plans {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .membership-plan {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.6rem;
 }
 
 .membership-plan h3 {
     color: #333;
 }
 .membership-btn{
-    width:160px;
+    width:16rem;
     background-color: #27ae60;
     color: white;
     border: none;
-    height: 60px;
+    height: 6rem;
     margin-left: 40%;
-    box-shadow: 2px 6px 5px rgba(0,0,0,0.2);
+    box-shadow: 0.2rem 0.6rem 0.5rem rgba(0,0,0,0.2);
 }
 .btn{
     left: 50%;
 }
 
 .price {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #27ae60;
 }
 
 #member-benefits {
     background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 #member-benefits ul {
@@ -82,29 +82,29 @@ header h1 {
 }
 
 #member-benefits li {
-    padding: 5px 0;
+    padding: 0.5rem 0;
 }
 
 #how-to-join, #faq, #contact {
     background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 #how-to-join ol {
     list-style-type: none;
-    padding: 0;
+    padding: 0rem;
 }
 
 #how-to-join li {
-    padding: 5px 0;
+    padding: 0.5rem 0;
 }
 
 #faq dl {
     display: grid;
-    gap: 10px;
+    gap: 1rem;
 }
 
 #faq dt {
@@ -129,7 +129,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -142,8 +142,8 @@ footer {
         
         /* border: 2px solid rgb(102, 29, 191); */
         position: fixed;
-        right: 34px;
-        top: 10px;
+        right: 3.4rem;
+        top: 1rem;
         /* padding: 10px; */
         /* width: 200px; */
         background-color: white;
@@ -155,29 +155,29 @@ footer {
             width: 100%;
             position: fixed;
             top: 0;
-            height: 60px;
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            height: 6rem;
+            box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2);
         }
         
         .navbar{
             display: inline-block;
-            border-radius: 4px;
+            border-radius: 0.4rem;
             position: fixed;
             min-width: 20%;
-            padding: 25px;
+            padding: 2.5rem;
             margin: 0;
             top: 0;
         }
         
         .navbar li{
             display: inline-block;
-            font-size: 20px;
+            font-size: 2rem;
         }
         
         .navbar li a{
             color: black;
             text-decoration: none;
-            padding: 34px 23px;
+            padding: 3.4rem 2.3rem;
         }
         
         .navbar li a:hover, .navbar li a:active{
@@ -187,18 +187,49 @@ footer {
         
         .btn{
             font-family: 'Baloo Bhai', cursive;
-            margin: 0px;
+            margin: 0rem;
             background-color: black;
             color: white;
-            padding: 8px 13px;
-            border: 2px solid gray;
-            border-radius: 10px;
-            font-size: 10px;
+            padding: 0.8rem 1.3rem;
+            border: 0.2rem solid gray;
+            border-radius: 1rem;
+            font-size: 1rem;
             cursor: pointer;
         }
         
         .btn:hover{
             background-color: brown;
+        }
+
+        </style>
+        <style>html {
+            font-size: 62.5%;
+        }
+        
+        @media (max-width: 1200px) {
+            html {
+                font-size: 55%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            html {
+                font-size: 45%;
+            }
+        
+            /* Adjustments for smaller screens */
+            .container {
+                width: 90%;
+                margin: 3rem auto;
+                padding: 1rem;
+            }
+            .navbar {
+            padding: 2rem; 
+        }
+
+        .navbar li a {
+            padding: 0.3rem; 
+        }
         }
         </style>
 </head>
