@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-           /* .mid{
+        /* .mid{
         border: 2px solid rgb(104, 224, 25);
         display: block;
         width: 50%;
@@ -14,167 +14,165 @@
         color: black;
 
     } */
+        body {
+            margin: 0rem;
+            padding: 0rem;
+            box-sizing: border-box;
+        }
 
-    body{
-    margin:0rem ;
-    padding:0rem ;
-    box-sizing:border-box;
-}
+        .navContainer {
 
-    .right{
-        display: inline-block;
-        
-        /* border: 2px solid rgb(102, 29, 191); */
-        position: fixed;
-        right: 3.4rem;
-        top: 1rem;
-        /* padding: 10px; */
-        /* width: 200px; */
-        background-color: white;
-        color: black;
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 6rem;
+            box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2)
+        }
 
-    }
-    /* FOR NAVBAR */
-    .navContainer{
-        
-        background-color: white;
-        width: 100%;
-        position: fixed;
-        top:0;
-        height:6rem;
-        box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.2)
-    }
-    .navbar{
-        display: inline-block;
-        border-radius: 0.4rem;
-        position: fixed;
-        min-width: 20%;
-        padding: 2.5rem;
-        margin: 0;
-        top: 0;
-    
-    }
-    .navbar li{
-        display: inline-block;
-        font-size: 2rem;
+        .right {
+            display: inline-block;
 
-    }
+            /* border: 2px solid rgb(102, 29, 191); */
+            position: fixed;
+            right: 3.4rem;
+            top: 1rem;
+            /* padding: 10px; */
+            /* width: 200px; */
 
-    .navbar li a{
-    color: black;
-    text-decoration: none;
-    padding: 3.4rem 2.3rem;
-    }
-    .navbar li a:hover,.navbar li a:active{
-    text-decoration: underline;
-    color: gray;
-    }
-    .btn{
-    
-    font-family: 'Baloo Bhai', cursive;
-    margin: 0rem;
-    background-color: black;
-    color: white;
-    padding: 0.8rem 1.3rem;
-    border: 0.2rem solid gray;
-    border-radius: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    }
-    .btn:hover{
-    background-color: brown;
-    }
+            color: black;
 
-        .container-fluid{
-            max-width: 80% ;
+        }
+
+        /* FOR NAVBAR */
+        .navbar {
+            display: inline-block;
+            background-color: white;
+            position: fixed;
+            border-radius: 0.4rem;
+            position: fixed;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 2rem;
+
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 3.4rem 2.3rem;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0rem;
+            background-color: black;
+            color: white;
+            padding: 0.8rem 1.3rem;
+            border: 0.2rem solid gray;
+            border-radius: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: brown;
+        }
+
+        .container-fluid {
+            /* max-width: 80% ; */
             margin-left: 10%;
             display: flex;
             flex-direction: column;
         }
-        .heading{
-            color:#fd3c3d;
+
+        .Heading {
+            color: #fd3c3d;
             font-size: 5rem;
             margin-left: 30%;
             margin-bottom: 2rem;
-            margin-top: 5rem;
-            
-            
+            margin-top: 8rem;
+
         }
-        .subheading{
-            font-size: 2.5rem;
-            font-style:italic;
-            text-align: center;
-        }
-       .text-center{
+
+        .text-center {
             font-size: 2.5rem;
             text-align: center;
-       }
-       p{
+        }
+
+        p {
             font-size: 2rem;
-       }
-       .brd{
-        display: flex;
-       
-       }
-       .img1{
+        }
+
+        .brd {
+            display: flex;
+
+        }
+
+        .img1 {
             max-width: 80%;
             align-self: center;
             justify-content: center;
 
-       }
-       .text-justify{
+        }
+
+        .text-justify {
             padding: 3rem;
-                justify-self: center ;
-       }
-    
-        body{
-margin:0;
-overflow-x:hidden;
+            justify-self: center;
+        }
+
+        .footer {
+    background: #000;
+    padding: 3rem 0rem;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
-.footer{
-background:#000;
-padding:5rem 0rem;
-font-family: 'Play', sans-serif;
-text-align:center;
-width: 100%;
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8rem;
 }
 
-.footer .row{
-width:100%;
-margin:1% 0%;
-padding:0.6% 0%;
-color:gray;
-font-size:0.8rem;
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
 }
 
-.footer .row a{
-text-decoration:none;
-color:gray;
-transition:0.5s;
+.footer .row a:hover {
+    color: #fff;
 }
 
-.footer .row a:hover{
-color:#fff;
+.footer .row ul {
+    width: 100%;
 }
 
-.footer .row ul{
-width:100%;
+.footer .row ul li {
+    display: inline-block;
+    margin: 0rem 3rem;
 }
 
-.footer .row ul li{
-display:inline-block;
-margin:0rem 3rem;
+.footer .row a i {
+    font-size: 2rem;
+    margin: 0% 1%;
 }
 
-.footer .row a i{
-font-size:3rem;
-margin:0% 1%;
-}
-
-
-
-html {
+        html {
     font-size: 62.5%;
 }
 @media (max-width: 1200px) {
@@ -204,7 +202,6 @@ html {
        
 }
 
-       
     </style>
 
 </head>
