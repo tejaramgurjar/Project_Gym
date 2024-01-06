@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,15 +41,17 @@
     </header>
     <div class="container">
         <h2>Join The Best Gym Of Bagru Now</h2>
-        <form action='temp.php' method='post' enctype='multipart/form-data' onsubmit="return validateForm()">
+        <form action='temp.php' method='post' onsubmit="sendemail" enctype='multipart/form-data'
+            onsubmit="return validateForm()">
             <div class="form_group">
-                <input type="text" name="name" placeholder="Enter The Name">
+                <input type="text" id="name" name="name" placeholder="Enter The Name">
             </div>
             <div class="form_group">
-                <input type="tel" name="phone" placeholder="Enter The Contact" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+                <input type="tel" id="phone" name="phone" placeholder="Enter The Contact" pattern="[0-9]{10}"
+                    title="Please enter a 10-digit phone number">
             </div>
             <div class="form_group">
-                <input type="email" name="email" placeholder="Enter The Email">
+                <input type="email" id="email" name="email" placeholder="Enter The Email">
             </div>
 
             <button type="submit" value="submit" name="submit" class="submit-btn">Submit</button>
@@ -82,6 +85,25 @@
             return true;
         }
     </script>
+    <script src="smtp.elasticemail.com">
+    </script>
+    <script>
+        function sendemail() {
+           
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "tejaram20199@gmail.com",
+    Password : "31579C2A204564D920B976A5C243C919101A",
+    To : 'tejaram20199@gmail.com',
+    From : document.getElementById(email).value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+
 </body>
 
 </html>
