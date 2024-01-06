@@ -41,7 +41,7 @@
     </header>
     <div class="container">
         <h2>Join The Best Gym Of Bagru Now</h2>
-        <form action='temp.php' method='post' onsubmit="sendemail" enctype='multipart/form-data'
+        <form action='temp.php' method='post' enctype='multipart/form-data'
             onsubmit="return validateForm()">
             <div class="form_group">
                 <input type="text" id="name" name="name" placeholder="Enter The Name">
@@ -54,7 +54,7 @@
                 <input type="email" id="email" name="email" placeholder="Enter The Email">
             </div>
 
-            <button type="submit" value="submit" name="submit" class="submit-btn">Submit</button>
+            <button type="submit" value="submit" onclick="sendemail()" name="submit" class="submit-btn">Submit</button>
         </form>
     </div>
     <script>
